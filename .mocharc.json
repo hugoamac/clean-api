@@ -1,0 +1,9 @@
+{
+  "slow": 1000,
+  "timeout": 5000,
+  "recursive": true,
+  "extension": ["ts"],
+  "spec": "./src/**/*.spec.ts",
+  "reporter": "spec",
+  "require": ["ts-node/register", "source-map-support/register"]
+}
