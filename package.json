@@ -4,9 +4,10 @@
   "description": "this application provides the sample api using clean archtecture.",
   "main": "server.js",
   "scripts": {
+    "clean": "rm -fR app coverage .nyc_output",
     "compile": "tsc",
     "mocha": "nyc mocha",
-    "test": "npm run compile && npm run mocha",
+    "test": "npm run clean && npm run compile && npm run mocha",
     "start": "node ./app/server.js"
   },
   "repository": {
