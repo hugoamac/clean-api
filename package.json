@@ -8,7 +8,8 @@
     "compile": "tsc",
     "mocha": "nyc mocha",
     "test": "npm run clean && npm run compile && npm run mocha",
-    "start": "node ./app/server.js"
+    "start": "node ./app/server.js",
+    "dev": "ts-node-dev -r dotenv/config ./src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -62,6 +63,7 @@
     "sinon": "^12.0.1",
     "source-map-support": "^0.5.21",
     "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.3"
   }
 }
